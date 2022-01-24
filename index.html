@@ -7,17 +7,67 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Random Name Generator</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <input id="addToListINPUT"type="text"> <br>
+                        <button id="addToListBtn"type="button" class="btn btn-success mt-2">Click to Add to List</button>
+                    </div>
+                    <div class="col-4">
+                        <input id="numberOFPeopleINPUT" type="text"> <br>
+                        <button id="numberOFPeople"type="button" class="btn btn-success mt-2">Click for Numbers of People</button>
+
+                    </div>
+                    <div class="col-4">
+                        <input id="numberOFGROUPSINPUT" type="text"> <br>
+                        <button id="numberOFGROUPS"type="button" class="btn btn-success mt-2">Click for Number of Groups</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Click on Name to Remove</h3>
+                        <button id="randomizeBTN" type="button" class="btn btn-success mt-3">Generate Random Name</button>
+                        <button id="clearBTN" type="button" class="btn btn-success mt-3">Click to Clear List</button>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div id="injectHere" class="col-12">
+
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+        <div class="row">
+            <div id="injectGroups"class="col">
+            
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="./script/app.js" type="module"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
